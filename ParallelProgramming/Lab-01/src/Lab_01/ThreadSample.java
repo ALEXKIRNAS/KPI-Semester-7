@@ -52,6 +52,7 @@ public class ThreadSample {
             System.out.format("\tParallel results: %.6f\n", parallelResult);
             System.out.format("\tParallel time: %.3fs\n", parallel_time / 1e9);
             System.out.format("\tSpeedup: %.3fx\n\n",  serial_time / parallel_time);
+            System.out.format("\tEfficiency: %.2f%%\n\n",  serial_time / parallel_time / NUMBER_JOBS * 100);
         }
     }
 }
