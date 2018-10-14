@@ -16,8 +16,7 @@ public class DiningPhilosophersApp {
             philosophers.add(new Philosopher("Philosopher-" + (i + 1) ,forks.get(i), forks.get(i + 1)));
         }
 
-        //philosophers.add(new Philosopher("Philosopher-5", forks.get(0),forks.get(4)));
-        philosophers.add(new Philosopher("Philosopher-5", forks.get(4), forks.get(0)));
+        philosophers.add(new Philosopher("Philosopher-5", forks.get(0),forks.get(4)));
 
         for (Philosopher philosopher : philosophers) {
             philosopher.start();
