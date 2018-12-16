@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="mpj-v0_44">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/mpj-v0_44/mpj-v0_44" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/mpj-v0_44/mpj-v0_44/doc/javadocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/mpj-v0_44/mpj-v0_44/debugger/src" />
+      <root url="file://$USER_HOME$/Downloads/mpj-v0_44/mpj-v0_44/src" />
+      <root url="file://$USER_HOME$/Downloads/mpj-v0_44/mpj-v0_44/test" />
+    </SOURCES>
+  </library>
+</component>
