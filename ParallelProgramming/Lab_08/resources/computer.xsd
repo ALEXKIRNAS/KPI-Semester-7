@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<xs:schema
+        attributeFormDefault="unqualified"
+        elementFormDefault="qualified"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="urn:Lab8.Website">
+    <xs:element name="Computer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="Name"/>
+                <xs:element type="xs:string" name="Origin"/>
+                <xs:element type="xs:integer" name="Price">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element type="xs:boolean" name="IsCritical"/>
+                <xs:element name="Type" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:boolean" name="IsPeripheral"/>
+                            <xs:element type="xs:integer" name="EnergyConsumption">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:boolean" name="HasCooler"/>
+                            <xs:element type="xs:string" name="TypeGroup">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Multimedia"/>
+                                        <xs:enumeration value="In/Out"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="Port">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="COM"/>
+                                        <xs:enumeration value="USB"/>
+                                        <xs:enumeration value="LPT"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Computer
+        xmlns="urn:lab8"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="computer.xsd">
+
+    <Name>MAC</Name>
+    <Origin>USA</Origin>
+    <Price>2500</Price>
+    <IsCritical>true</IsCritical>
+    <Type>
+        <IsPeripheral>false</IsPeripheral>
+        <EnergyConsumption>90</EnergyConsumption>
+        <HasCooler>true</HasCooler>
+        <TypeGroup>Multimedia</TypeGroup>
+        <Port>USB</Port>
+    </Type>
+</Computer>
